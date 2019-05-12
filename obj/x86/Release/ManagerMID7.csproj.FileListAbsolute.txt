@@ -1,0 +1,11 @@
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\bin\x86\Release\Database.mdf
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\bin\x86\Release\Database_log.ldf
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\bin\x86\Release\ManagerMID7.exe.config
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\bin\x86\Release\ManagerMID7.exe
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\bin\x86\Release\ManagerMID7.pdb
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.Form1.resources
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.Properties.Resources.resources
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.exe
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.pdb

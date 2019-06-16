@@ -19,7 +19,7 @@ namespace ManagerMID7
             InitializeComponent();
         }
 
-        private async void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e) // начало запуска
         {
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\Database.mdf;Integrated Security=True"; // физ расположение бд
 
@@ -27,6 +27,10 @@ namespace ManagerMID7
 
             await sqlConnection.OpenAsync(); // соединение с бд
 
+            SqlTransaction nwindTxn = sqlConnection.BeginTransaction();
+            try {
+
+            }
             SqlDataReader sqlReader = null;
             SqlCommand command = new SqlCommand("SELECT * FROM [Sites]", sqlConnection);
             try
@@ -57,14 +61,16 @@ namespace ManagerMID7
                 sqlConnection.Close(); // Без утечек
             }
         }
-
+        
+        //добавление
         private async void button1_Click(object sender, EventArgs e) // регистрация
         {
             if (label5.Visible)
             {
-                label5.Visible = false;
+                label5.Visible = false; 
             }
 
+            // проверка на наличие данных
             if (!string.IsNullOrEmpty(textBox1.Text) || !string.IsNullOrEmpty(textBox2.Text) || !string.IsNullOrEmpty(textBox3.Text) || !string.IsNullOrEmpty(textBox4.Text) ||
                 !string.IsNullOrWhiteSpace(textBox1.Text) || !string.IsNullOrWhiteSpace(textBox2.Text) || !string.IsNullOrWhiteSpace(textBox3.Text) || !string.IsNullOrWhiteSpace(textBox4.Text))
             {
@@ -76,7 +82,7 @@ namespace ManagerMID7
                 command.Parameters.AddWithValue("DataCash", textBox3.Text);
                 command.Parameters.AddWithValue("Profit", textBox4.Text);
 
-                await command.ExecuteNonQueryAsync();
+                await command.ExecuteNonQueryAsync(); // выполняем без получения чего-то
             }
             else
             {
@@ -111,6 +117,7 @@ namespace ManagerMID7
             }
         }
 
+        // изменение
         private async void button2_Click(object sender, EventArgs e)
         {
             if (label10.Visible)
@@ -118,6 +125,7 @@ namespace ManagerMID7
                 label10.Visible = false;
             }
 
+            // проверка на наличие данных
             if (!string.IsNullOrEmpty(textBox5.Text) || !string.IsNullOrEmpty(textBox6.Text) || !string.IsNullOrEmpty(textBox7.Text) || !string.IsNullOrEmpty(textBox8.Text) ||
                 !string.IsNullOrWhiteSpace(textBox5.Text) || !string.IsNullOrWhiteSpace(textBox6.Text) || !string.IsNullOrWhiteSpace(textBox7.Text) || !string.IsNullOrWhiteSpace(textBox8.Text))
             {
@@ -141,6 +149,7 @@ namespace ManagerMID7
             }
         }
 
+        // удаление
         private async void button3_Click(object sender, EventArgs e)
         {
             if (label12.Visible)

@@ -9,3 +9,4 @@ C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.c
 C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.csproj.CoreCompileInputs.cache
 C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.exe
 C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.pdb
+C:\Users\Asus\source\repos\ManagerMID7\ManagerMID7\obj\x86\Release\ManagerMID7.csprojAssemblyReference.cache

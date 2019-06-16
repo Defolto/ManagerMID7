@@ -68,11 +68,12 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>logo — копия.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -126,6 +127,7 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="logo %281%29.ico" />
+    <Content Include="logo — копия.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
